@@ -1,0 +1,16 @@
+.square, .square1{
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 4%;
+    margin: 0px;
+}
+
+
+/* We do flex for grid because the grid outlines all of our column boxes*/
+#grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
