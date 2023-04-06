@@ -1,10 +1,19 @@
 const container = document.querySelector('#grid');
 
-var gridbtn = document.getElementById('gridsizebtn');
+var grid = document.createElement('div');
+grid.className = 'gridoutline';
 
+
+var gridbtn = document.getElementById('gridsizebtn');
 gridbtn.addEventListener('click', createGrid);
 
+
 function createGrid(){
+   const sqrs = Array.from(document.getElementsByClassName('row'));
+
+   sqrs.forEach(i =>{
+    i.classList.remove('row');
+   })
     var size = prompt("How big do you want your grid? (max size is 100)");
     for(let i = 0; i < size; i++){
         //This will create each individual row
@@ -16,10 +25,13 @@ function createGrid(){
             //square.setAttribute('id', 'square');
             square.className = "square";
             row.appendChild(square);
-            container.appendChild(row);
+            grid.appendChild(row);
         }
     }
 }
+
+container.appendChild(grid);
+
 
 /*
 //We loop 16 times bc we want 16x16
