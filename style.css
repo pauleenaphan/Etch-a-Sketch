@@ -4,22 +4,33 @@
     align-items: center;
     justify-content: center;
 
+    background-color: red;
+    width: 600px;
+    height: 600px;
+    margin: 0% auto;
+
+    border-style: solid;
+    border-radius: 4%;
+    border-width: medium;
+
 }
 
 .square{
     /*Allows the sqaures to fill up the row size*/
     width: 100%;
     height: 100%;
-    border-style: solid;
-    border-color: black;
+    
 }
 
 .gridoutline{
     display: flex;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
+    background-color: white;
     
+    /*bug if i add a border style then the whole box turns gray*/
+    /*border-style: solid;*/
 }
 
 .row{
@@ -31,13 +42,37 @@
     height: 100%;
 }
 
-#gridsizebtn{
-    /* centers the button*/
-    margin: auto;
+h1{
+    text-align: center;
+    font-family: "Chalkduster";
+    padding: 20px 300px;
+
+}
+
+body{
+    background-color: lightblue;
+}
+
+.btns{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     margin-top: 50px;
-    padding: 50px 250px;
+}
+
+#gridsizebtn{
+    /* centers the button*/
+   
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+
+    font-family: "Chalkduster";
+    padding: 30px;
+}
+
+#colorbtn{
+    font-family: "Chalkduster";
+    padding: 25px;
 }
