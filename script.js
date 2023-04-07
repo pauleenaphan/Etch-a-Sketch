@@ -62,11 +62,17 @@ var sqr = document.getElementsByClassName("gridoutline");
 //evt refers to the sqr being hovered over on
 function colorFunc(evt){
     //gets the current value of colors that allows the user to draw with this color
-    evt.target.style.backgroundColor = document.getElementById('colors').value;
+    evt.style.backgroundColor = document.getElementById('colors').value;
 }
 
 //We need to loop through to add eventlis to all the squares
 for(var i = 0; i < sqr.length; i++){
-    sqr[i].addEventListener('mouseover', colorFunc);
+    sqr[i].addEventListener('mouseover', function(e){
+        //add it so that you can hold mouse down and drag for color
+        //1 means the button is being clicked on
+        if(e.buttons == 1){
+            colorFunc(e.target);
+        }
+    });
+    
 }
-
