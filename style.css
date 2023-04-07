@@ -56,23 +56,29 @@ body{
 .btns{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: 40px;
 
-    margin-top: 50px;
 }
 
 #gridsizebtn{
-    /* centers the button*/
-   
-    /*display: flex;
-    align-items: center;
-    justify-content: center;*/
-
     font-family: "Chalkduster";
     padding: 30px;
+    margin: 20px;
 }
 
 #colorbtn{
     font-family: "Chalkduster";
     padding: 25px;
+    margin: 20px;
+}
+
+p{
+    text-align: center;
+    font-family: "Chalkduster";
+}
+
+img{
+    width: 3%;
+    height: 3%;
 }
